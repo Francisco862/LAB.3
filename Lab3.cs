@@ -16,18 +16,15 @@ public class Lab3
 
     static void zad1()
     {
-        //tworzenie obiektów rgb
+        //kreowanie obiektów rgb
         RGB color1 = new RGB(0, 0, 0);
         RGB color2 = new RGB(0, 0, 0);
-        //inicjowanie składowych dla obiektów
         RGBController.rgbInit(color1, 255, 123, 43);
         RGBController.rgbInit(color2, 34, 22, 125);
-        //wyświetlanie składowych
         Console.Write("Składowe pierwszego koloru: ");
         RGBController.rgbDisplay(color1);
         Console.Write("Składowe drugiego koloru: ");
         RGBController.rgbDisplay(color2);
-        //mieszanie kolorów
         RGB color3 = RGBController.colorMix(color1, color2);
         Console.Write("Zmieszane kolory: ");
         RGBController.rgbDisplay(color3);
